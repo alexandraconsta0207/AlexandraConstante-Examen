@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E7F1"
+    tools:context=".Actividad2">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/tvBienvenido"
+        android:textColor="#141515"
+        app:layout_constraintEnd_toStartOf="@+id/tvUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/tvCentro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/seleccionedeportes"
+        app:layout_constraintBottom_toTopOf="@+id/cbBasket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCentro" />
+
+    <CheckBox
+        android:id="@+id/cbEsgrima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="@string/Esgrima"
+        app:layout_constraintBottom_toTopOf="@+id/cbTenis"
+        app:layout_constraintStart_toStartOf="@+id/cbTenis"
+        app:layout_constraintTop_toBottomOf="@+id/cbBasket" />
+
+    <CheckBox
+        android:id="@+id/cbBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/basket"
+        app:layout_constraintBottom_toTopOf="@+id/cbEsgrima"
+        app:layout_constraintEnd_toEndOf="@+id/cbEsgrima"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <CheckBox
+        android:id="@+id/cbTenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tenis"
+        app:layout_constraintBottom_toTopOf="@+id/tvIdiomas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbEsgrima" />
+
+    <TextView
+        android:id="@+id/tvIdiomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tvIdiomas"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbTenis" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        app:layout_constraintEnd_toEndOf="@+id/tvIdiomas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdiomas">
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/si" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="96dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="91dp"
+        android:onClick="envioRespuestas"
+        android:text="@string/btnGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvCentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="77dp"
+        android:text="@string/tvCentro"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+    <EditText
+        android:id="@+id/etRazon"
+        android:layout_width="296dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/cbBasket"
+        app:layout_constraintEnd_toEndOf="@+id/tvCentro"
+        app:layout_constraintStart_toEndOf="@+id/tvCentro"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:src="@drawable/download"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsuario"
+        app:layout_constraintEnd_toStartOf="@+id/tvUsuario"
+        app:layout_constraintStart_toStartOf="@+id/tvUsuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

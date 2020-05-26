@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AlexandraConstanteExamen</string>
+    <string name="tvTitulo">Examen</string>
+    <string name="txtUser"></string>
+    <string name="txtPassword"></string>
+    <string name="User">Usuario</string>
+    <string name="Password">Contrasenia</string>
+    <string name="seleccionedeportes">Deportes que practica</string>
+    <string name="basket">Basket</string>
+    <string name="tenis">Tenis</string>
+    <string name="Esgrima">Esgrima</string>
+    <string name="txtMonto"> Ingrese monto inicial: </string>
+    <string name="txtNombre"> Ingrese su nombre: </string>
+    <string name="etRegistro"> REGISTRO DE ESTUDIANTES: </string>
+    <string name="tvPagoCuotas"> Tres cuotas de: </string>
+    <string name="tvBienvenido">Bienvenido al sistema</string>
+    <string name="tvCentro"> Por que eligio este centro?  </string>
+    <string name="tvIdiomas"> Le interesa otro idioma aparte de ingles ?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="btnGuardar">GUARDAR</string>
+</resources>

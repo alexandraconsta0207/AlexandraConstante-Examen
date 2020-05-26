@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Resumen">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/download"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvBienvenido"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/imageView4"
+        android:textColor="#141515"/>
+
+    <TextView
+        android:id="@+id/tvUsuario2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@id/textView"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FF5722"
+        android:layout_below="@id/imageView4"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <TextView
+        android:id="@+id/tvNombreEst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsuario2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre estudiante" />
+
+
+    <TextView
+        android:id="@+id/tvNombreEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Total a Pagar :" />
+
+    <TextView
+        android:id="@+id/tvPagoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/tvPregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="¿Porqué eligió este centro?" />
+
+    <TextView
+        android:id="@+id/tvRespuesta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvPregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="¿Qué deporte practica?" />
+
+    <TextView
+        android:id="@+id/tvRespuesta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvPregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Está interesado en aprender otro idioma aparte de inglés" />
+
+    <TextView
+        android:id="@+id/tvResouesta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>
